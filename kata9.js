@@ -60,8 +60,8 @@ function primeTo3(number){
 }
 
 function primeTo4(number) {
-    let array = Array.from({length: number - 2}, (v, i) => i + 3);
-    return array.reduce((p, c) => p.some(e => c % e === 0) ? p : [...p, c],[2]);
+    let array = Array.from({length: number - 1}, (v, i) => i + 2);
+    return array.reduce((p, c) => p.some(e => c % e === 0) ? p : [...p, c],[]);
 }
 
 function primeTo5(number) {
